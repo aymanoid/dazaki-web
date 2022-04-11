@@ -7,7 +7,7 @@ class DazakiDocument extends Document {
         <Head>
           <meta name="robots" content="noindex, nofollow" />
         </Head>
-        <body className="bg-white antialiased">
+        <body className="antialiased">
           <Main />
           <NextScript />
         </body>
