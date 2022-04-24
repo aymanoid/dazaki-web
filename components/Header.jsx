@@ -244,12 +244,6 @@ const Header = () => {
                   >
                     Sign up
                   </a>
-                  <p className="mt-6 text-center text-base font-medium text-gray-500">
-                    Existing customer?
-                    <a href="#" className="text-gray-900">
-                      Sign in
-                    </a>
-                  </p>
                 </div>
               </div>
             </div>
