@@ -222,19 +222,19 @@ const Header = () => {
                     href="#"
                     className="text-base font-medium text-gray-900 hover:text-gray-700"
                   >
-                    Pricing
+                    About
                   </a>
                   <a
                     href="#"
                     className="text-base font-medium text-gray-900 hover:text-gray-700"
                   >
-                    Partners
+                    Work
                   </a>
                   <a
                     href="#"
                     className="text-base font-medium text-gray-900 hover:text-gray-700"
                   >
-                    Company
+                    Blog
                   </a>
                 </div>
                 <div className="mt-6">
@@ -242,7 +242,7 @@ const Header = () => {
                     href="#"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
                   >
-                    Sign up
+                    Contact
                   </a>
                 </div>
               </div>
