@@ -1,40 +1,53 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import {
-  AnnotationIcon,
-  ChatAlt2Icon,
-  InboxIcon,
   MenuIcon,
-  QuestionMarkCircleIcon,
   XIcon,
+  DesktopComputerIcon,
+  UserGroupIcon,
+  CameraIcon,
+  BriefcaseIcon,
+  ColorSwatchIcon,
+  MicrophoneIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 
-const solutions = [
+const menuData = [
   {
-    name: "Inbox",
-    description:
-      "Get a better understanding of where your traffic is coming from.",
+    name: "Twitch & YouTube Creators",
+    description: "",
     href: "#",
-    icon: InboxIcon,
+    icon: DesktopComputerIcon,
   },
   {
-    name: "Messaging",
-    description: "Speak directly to your customers in a more meaningful way.",
+    name: "Internet Celebrities & Influencers",
+    description: "",
     href: "#",
-    icon: AnnotationIcon,
+    icon: UserGroupIcon,
   },
   {
-    name: "Live Chat",
-    description: "Your customers' data will be safe and secure.",
+    name: "Models & Actors",
+    description: "",
     href: "#",
-    icon: ChatAlt2Icon,
+    icon: CameraIcon,
   },
   {
-    name: "Knowledge Base",
-    description: "Connect with third-party tools that you're already using.",
+    name: "Businesses & Enterprises",
+    description: "",
     href: "#",
-    icon: QuestionMarkCircleIcon,
+    icon: BriefcaseIcon,
+  },
+  {
+    name: "Photographers, Artists, & Designers",
+    description: "",
+    href: "#",
+    icon: ColorSwatchIcon,
+  },
+  {
+    name: "Musicians & Bands",
+    description: "",
+    href: "#",
+    icon: MicrophoneIcon,
   },
 ];
 
@@ -73,7 +86,7 @@ const Header = () => {
                       "group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     )}
                   >
-                    <span>Solutions</span>
+                    <span>Industries</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -95,7 +108,7 @@ const Header = () => {
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                          {solutions.map((item) => (
+                          {menuData.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
@@ -186,7 +199,7 @@ const Header = () => {
                 </div>
                 <div className="mt-6">
                   <nav className="grid grid-cols-1 gap-7">
-                    {solutions.map((item) => (
+                    {menuData.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
