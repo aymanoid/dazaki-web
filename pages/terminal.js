@@ -17,9 +17,6 @@ const Terminal = () => {
         backgroundColor="#0C0C0C"
         style={{ fontWeight: "bold", fontSize: "1em" }}
         commands={{
-          "open-google": () => window.open("https://www.google.com/", "_blank"),
-          showmsg: () => "Hello World",
-          popup: () => alert("Terminal in React"),
           base64: {
             method: (args, print) => {
               if (!args._.length) {
@@ -43,11 +40,7 @@ const Terminal = () => {
           },
         }}
         descriptions={{
-          "open-google": "opens google.com",
-          showmsg: "shows a message",
-          alert: "alert",
-          popup: "alert",
-          base64: "base64ies a string",
+          base64: "Base64 encode.",
         }}
         msg="Various utility commands."
       />
