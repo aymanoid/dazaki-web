@@ -3,7 +3,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 import WebsiteLogoSvg from "components/svgs/website_logo.svg";
 
-const MobileMenuDark = ({ subMenuData, navLinksData }) => {
+const MobileMenu = ({ subMenuData, navLinksData }) => {
   return (
     <Transition
       as={Fragment}
@@ -77,4 +77,4 @@ const MobileMenuDark = ({ subMenuData, navLinksData }) => {
   );
 };
 
-export default MobileMenuDark;
+export default MobileMenu;
