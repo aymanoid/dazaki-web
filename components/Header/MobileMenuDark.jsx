@@ -18,7 +18,7 @@ const MobileMenuDark = ({ subMenuData, navLinksData }) => {
         focus
         className="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden"
       >
-        <div className="divide-y-2 divide-gray-200 rounded-lg bg-black shadow-lg ring-1 ring-black ring-opacity-5">
+        <div className="divide-y-2 divide-rose-500 rounded-lg bg-black shadow-lg ring-1 ring-black ring-opacity-5">
           <div className="px-5 pt-5 pb-6">
             <div className="flex items-center justify-between">
               <div>
@@ -37,7 +37,7 @@ const MobileMenuDark = ({ subMenuData, navLinksData }) => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50"
+                    className="-m-3 flex items-center rounded-lg p-3 hover:outline hover:outline-rose-500"
                   >
                     <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-rose-600 text-white">
                       <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -56,7 +56,7 @@ const MobileMenuDark = ({ subMenuData, navLinksData }) => {
                 <a
                   key={e.name}
                   href={e.href}
-                  className="text-base font-medium text-white hover:text-gray-700"
+                  className="text-base font-medium text-white hover:text-rose-500"
                 >
                   {e.name}
                 </a>
