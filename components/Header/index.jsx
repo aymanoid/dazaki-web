@@ -9,7 +9,6 @@ import {
   MicrophoneIcon,
 } from "@heroicons/react/outline";
 import WebsiteLogoSvg from "components/svgs/website_logo.svg";
-//import MobileMenu from "components/Header/MobileMenu";
 import MobileMenuLight from "components/Header/MobileMenuLight";
 import MobileMenuDark from "components/Header/MobileMenuDark";
 import SubMenu from "components/Header/SubMenu";
