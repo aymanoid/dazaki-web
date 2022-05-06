@@ -13,8 +13,10 @@ const SubMenu = ({ subMenuData }) => {
         <>
           <Popover.Button
             className={classNames(
-              open ? "text-rose-500" : "text-white",
-              "focus:ring-offset-none group inline-flex items-center rounded-md bg-black text-base font-medium hover:text-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 focus:ring-offset-black"
+              open
+                ? "focus:ring-offset-none text-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 focus:ring-offset-black"
+                : "text-white",
+              "group inline-flex items-center rounded-md bg-black text-base font-medium hover:text-rose-500"
             )}
           >
             <span>Industries</span>
