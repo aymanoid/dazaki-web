@@ -52,6 +52,12 @@ const menuData = [
   },
 ];
 
+const navLinksData = [
+  { name: "About", href: "#" },
+  { name: "Work", href: "#" },
+  { name: "Blog", href: "#" },
+];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -134,25 +140,14 @@ const Header = () => {
                 </>
               )}
             </Popover>
-
-            <a
-              href="#"
-              className="text-base font-medium text-white hover:text-rose-500"
-            >
-              About
-            </a>
-            <a
-              href="#"
-              className="text-base font-medium text-white hover:text-rose-500"
-            >
-              Work
-            </a>
-            <a
-              href="#"
-              className="text-base font-medium text-white hover:text-rose-500"
-            >
-              Blog
-            </a>
+            {navLinksData.map((e) => (
+              <a
+                href={e.href}
+                className="text-base font-medium text-white hover:text-rose-500"
+              >
+                {e.name}
+              </a>
+            ))}
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <a
@@ -164,7 +159,7 @@ const Header = () => {
           </div>
         </div>
 
-        <MobileMenu menuData={menuData} />
+        <MobileMenu menuData={menuData} navLinksData={navLinksData} />
 
         <div className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1"></div>
       </Popover>
