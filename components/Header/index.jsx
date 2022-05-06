@@ -63,7 +63,7 @@ const navLinksData = [
 const Header = () => {
   const { query } = useRouter();
 
-  const MobileMenu = query.mm === "dark" ? MobileMenuDark : MobileMenuLight;
+  const MobileMenu = query.mm === "light" ? MobileMenuLight : MobileMenuDark;
 
   return (
     <header>
