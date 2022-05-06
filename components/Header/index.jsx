@@ -9,8 +9,11 @@ import {
   MicrophoneIcon,
 } from "@heroicons/react/outline";
 import WebsiteLogoSvg from "components/svgs/website_logo.svg";
-import MobileMenu from "components/Header/MobileMenu";
+//import MobileMenu from "components/Header/MobileMenu";
+import MobileMenuLight from "components/Header/MobileMenuLight";
+import MobileMenuDark from "components/Header/MobileMenuDark";
 import SubMenu from "components/Header/SubMenu";
+import { useRouter } from "next/router";
 
 const subMenuData = [
   {
@@ -58,6 +61,10 @@ const navLinksData = [
 ];
 
 const Header = () => {
+  const { query } = useRouter();
+
+  const MobileMenu = query.mm === "dark" ? MobileMenuDark : MobileMenuLight;
+
   return (
     <header>
       <Popover className="relative bg-black">
