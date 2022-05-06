@@ -86,6 +86,7 @@ const Header = () => {
 
             {navLinksData.map((e) => (
               <a
+                key={e.name}
                 href={e.href}
                 className="text-base font-medium text-white hover:text-rose-500"
               >

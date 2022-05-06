@@ -54,6 +54,7 @@ const MobileMenuDark = ({ subMenuData, navLinksData }) => {
             <div className="grid grid-cols-2 gap-4">
               {navLinksData.map((e) => (
                 <a
+                  key={e.name}
                   href={e.href}
                   className="text-base font-medium text-white hover:text-gray-700"
                 >
