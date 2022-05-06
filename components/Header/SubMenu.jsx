@@ -48,7 +48,11 @@ const SubMenu = ({ subMenuData }) => {
                       className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                     >
                       <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-rose-600 text-white sm:h-12 sm:w-12">
-                        <item.icon className="h-6 w-6" aria-hidden="true" />
+                        <item.icon
+                          className="h-6 w-6 fill-current"
+                          aria-hidden="true"
+                          fill="none"
+                        />
                       </div>
                       <div className="ml-4">
                         <p className="text-base font-medium text-gray-900">

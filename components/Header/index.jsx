@@ -1,13 +1,11 @@
 import { Popover } from "@headlessui/react";
-import {
-  MenuIcon,
-  DesktopComputerIcon,
-  UserGroupIcon,
-  CameraIcon,
-  BriefcaseIcon,
-  ColorSwatchIcon,
-  MicrophoneIcon,
-} from "@heroicons/react/outline";
+import CreatorSvg from "components/svgs/sub-menu/iconmonstr-webcam-3.svg";
+import InfluencerSvg from "components/svgs/sub-menu/iconmonstr-user-29.svg";
+import MusicianSvg from "components/svgs/sub-menu/iconmonstr-party-17.svg";
+import BriefcaseSvg from "components/svgs/sub-menu/iconmonstr-briefcase-5.svg";
+import ActorSvg from "components/svgs/sub-menu/iconmonstr-party-21.svg";
+import PhotoCameraSvg from "components/svgs/sub-menu/iconmonstr-photo-camera-5.svg";
+import { MenuIcon } from "@heroicons/react/outline";
 import WebsiteLogoSvg from "components/svgs/website_logo.svg";
 import MobileMenu from "components/Header/MobileMenu";
 import SubMenu from "components/Header/SubMenu";
@@ -17,37 +15,37 @@ const subMenuData = [
     name: "Twitch & YouTube Creators",
     description: "",
     href: "#",
-    icon: DesktopComputerIcon,
+    icon: CreatorSvg,
   },
   {
     name: "Internet Celebrities & Influencers",
     description: "",
     href: "#",
-    icon: UserGroupIcon,
+    icon: InfluencerSvg,
   },
   {
     name: "Models & Actors",
     description: "",
     href: "#",
-    icon: CameraIcon,
+    icon: ActorSvg,
   },
   {
     name: "Businesses & Enterprises",
     description: "",
     href: "#",
-    icon: BriefcaseIcon,
+    icon: BriefcaseSvg,
   },
   {
     name: "Photographers, Artists, & Designers",
     description: "",
     href: "#",
-    icon: ColorSwatchIcon,
+    icon: PhotoCameraSvg,
   },
   {
     name: "Musicians & Bands",
     description: "",
     href: "#",
-    icon: MicrophoneIcon,
+    icon: MusicianSvg,
   },
 ];
 

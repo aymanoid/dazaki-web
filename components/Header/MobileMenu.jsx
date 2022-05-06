@@ -40,7 +40,11 @@ const MobileMenu = ({ subMenuData, navLinksData }) => {
                     className="-m-3 flex items-center rounded-lg p-3 hover:outline hover:outline-rose-500"
                   >
                     <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-rose-600 text-white">
-                      <item.icon className="h-6 w-6" aria-hidden="true" />
+                      <item.icon
+                        className="h-6 w-6 fill-current"
+                        aria-hidden="true"
+                        fill="none"
+                      />
                     </div>
                     <div className="ml-4 text-base font-medium text-white">
                       {item.name}
