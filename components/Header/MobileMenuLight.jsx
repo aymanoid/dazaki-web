@@ -37,7 +37,7 @@ const MobileMenuLight = ({ subMenuData, navLinksData }) => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50"
+                    className="-m-3 flex items-center rounded-lg border-white p-3 hover:outline hover:outline-rose-500"
                   >
                     <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-rose-600 text-white">
                       <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -56,7 +56,7 @@ const MobileMenuLight = ({ subMenuData, navLinksData }) => {
                 <a
                   key={e.name}
                   href={e.href}
-                  className="text-base font-medium text-black hover:text-gray-700"
+                  className="text-base font-medium text-black hover:text-rose-500"
                 >
                   {e.name}
                 </a>
