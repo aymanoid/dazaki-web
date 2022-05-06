@@ -105,7 +105,7 @@ const Header = () => {
 
         <MobileMenu subMenuData={subMenuData} navLinksData={navLinksData} />
 
-        <div className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1"></div>
+        <div className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1" />
       </Popover>
     </header>
   );
