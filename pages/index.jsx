@@ -1,9 +1,12 @@
 import Layout from "components/Layout";
+import HeroSection from "components/home/HeroSection";
 
 const Home = () => {
   return (
     <Layout>
-      <h1 className="text-3xl font-bold text-black">dazaki</h1>
+      <main>
+        <HeroSection />
+      </main>
     </Layout>
   );
 };
