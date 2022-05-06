@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 
-const MobileMenu = ({ menuData, navLinksData }) => {
+const MobileMenu = ({ subMenuData, navLinksData }) => {
   return (
     <Transition
       as={Fragment}
@@ -36,7 +36,7 @@ const MobileMenu = ({ menuData, navLinksData }) => {
             </div>
             <div className="mt-6">
               <nav className="grid grid-cols-1 gap-7">
-                {menuData.map((item) => (
+                {subMenuData.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}

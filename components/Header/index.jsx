@@ -13,7 +13,7 @@ import { ChevronDownIcon } from "@heroicons/react/solid";
 import WebsiteLogoSvg from "components/svgs/website_logo.svg";
 import MobileMenu from "./MobileMenu";
 
-const menuData = [
+const subMenuData = [
   {
     name: "Twitch & YouTube Creators",
     description: "",
@@ -111,7 +111,7 @@ const Header = () => {
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                          {menuData.map((item) => (
+                          {subMenuData.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
@@ -159,7 +159,7 @@ const Header = () => {
           </div>
         </div>
 
-        <MobileMenu menuData={menuData} navLinksData={navLinksData} />
+        <MobileMenu subMenuData={subMenuData} navLinksData={navLinksData} />
 
         <div className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1"></div>
       </Popover>
