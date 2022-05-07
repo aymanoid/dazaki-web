@@ -46,7 +46,7 @@ const navigation = {
 const Footer = () => {
   return (
     <footer className="bg-black">
-      <div className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1"></div>
+      <div className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1" />
       <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
         <nav
           className="-mx-5 -my-2 flex flex-wrap justify-center"
