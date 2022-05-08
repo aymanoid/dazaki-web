@@ -7,7 +7,7 @@ const FirstSection = () => {
             Unlimited Possiblities
           </h2>
           <p className="mt-1 text-4xl font-extrabold text-black sm:text-5xl sm:tracking-tight lg:text-6xl">
-            It's simpler than you think!
+            It&apos;s simpler than you think!
           </p>
           <p className="mx-auto mt-5 max-w-xl text-xl text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
