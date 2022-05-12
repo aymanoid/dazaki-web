@@ -1,21 +1,21 @@
 const servicesData = [
   {
-    name: "Web Design and Development",
+    name: "Web Development",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
-    name: "Ecommerce Development",
+    name: "eCommerce Solutions",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
-    name: "Digital Marketing",
+    name: "Social Media Marketing",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
   {
-    name: "Brand Indentity",
+    name: "Digital Branding",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
   },
