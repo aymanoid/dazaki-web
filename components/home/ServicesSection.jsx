@@ -39,9 +39,9 @@ const ServicesSection = () => {
           Some of the services we offer
         </p>
         <p className="mt-5 max-w-prose text-left text-xl text-gray-300">
-          Phasellus lorem quam molestie id quisque diam aenean nulla in.
-          Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-          condimentum id viverra nulla.
+          From simple web fronts, to full-fledged apps and ecommerce projects,
+          we offer a wide range of services to our individual and business
+          clients.
         </p>
         <div className="mt-12">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
