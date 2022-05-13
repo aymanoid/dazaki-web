@@ -10,9 +10,8 @@ const FirstSection = () => {
             It&apos;s simpler than you think!
           </p>
           <p className="mx-auto mt-5 max-w-xl text-xl text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat
-            scelerisque varius morbi enim.
+            An idea of what you&apos;re trying to achieve is all you need, and
+            you can depend on us to do the rest.
           </p>
         </div>
       </div>
