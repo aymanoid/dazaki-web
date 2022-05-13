@@ -11,7 +11,8 @@ const HeroSection = () => {
           </h1>
           <p className="mx-auto mt-3 max-w-md text-lg text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl">
             Dazaki is building custom technology solutions for content creators,
-            businesses, influencers, and anyone else in need of cool stuff.
+            businesses, influencers, and anyone else in need of services to make
+            awesome experiences.
           </p>
           <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
