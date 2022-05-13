@@ -33,7 +33,7 @@ const servicesData = [
 
 const ServicesSection = () => {
   return (
-    <div className="relative bg-zinc-900 py-16 sm:py-24 lg:py-32">
+    <section className="relative bg-zinc-900 py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <p className="mt-2 text-left text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
           Some of the neat services we offer
@@ -62,7 +62,7 @@ const ServicesSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

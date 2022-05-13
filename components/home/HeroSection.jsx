@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div className="bg-zinc-900 lg:relative">
+    <section className="bg-zinc-900 lg:relative">
       <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-48 lg:text-left">
         <div className="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
@@ -42,7 +42,7 @@ const HeroSection = () => {
           alt=""
         />
       </div>
-    </div>
+    </section>
   );
 };
 
