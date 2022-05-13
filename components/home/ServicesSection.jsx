@@ -48,7 +48,7 @@ const ServicesSection = () => {
             {servicesData.map((e) => (
               <div key={e.name} className="pt-6">
                 <div className="rounded-lg bg-gradient-to-tr from-purple-500 to-rose-700 p-1">
-                  <div className="flow-root rounded-lg bg-zinc-900 px-6 pb-8">
+                  <div className="flow-root h-48 rounded-lg bg-zinc-900 px-6 pb-8">
                     <h3 className="mt-8 text-lg font-medium tracking-tight text-white">
                       {e.name}
                     </h3>
