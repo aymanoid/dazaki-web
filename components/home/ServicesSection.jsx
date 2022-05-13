@@ -36,7 +36,7 @@ const ServicesSection = () => {
     <div className="relative bg-zinc-900 py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <p className="mt-2 text-left text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Some of the services we offer
+          Some of the neat services we offer
         </p>
         <p className="mt-5 max-w-prose text-left text-xl text-gray-300">
           From simple web fronts, to full-fledged apps and ecommerce projects,
