@@ -2,7 +2,7 @@ const servicesData = [
   {
     name: "Web Development",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+      "Complete website development and design, from UX design to front-end coding to custom databases.",
   },
   {
     name: "eCommerce Solutions",
