@@ -28,11 +28,11 @@ const ConstrBanner = () => {
               </span>
               <p className="ml-3 truncate font-medium text-white">
                 <span className="md:hidden">
-                  Our new website is under construction.
+                  Website is under construction.
                 </span>
                 <span className="hidden md:inline">
-                  Our new website is under construction. Please come back later
-                  for the complete experience!
+                  Website is under construction. Please come back later for the
+                  complete experience!
                 </span>
               </p>
             </div>
