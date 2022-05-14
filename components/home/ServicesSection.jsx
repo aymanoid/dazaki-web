@@ -27,7 +27,7 @@ const servicesData = [
   {
     name: "Custom Software Development",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+      "For uncommon problems, we provide custom software solutions, such as desktop apps, server-only utilities, and chat bots.",
   },
 ];
 
