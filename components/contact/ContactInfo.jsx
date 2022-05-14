@@ -1,4 +1,4 @@
-import { MailIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 import DiscordSvg from "components/svgs/social/discord.svg";
 import TelegramSvg from "components/svgs/social/telegram.svg";
 import EmailSvg from "components/svgs/iconmonstr-email-1.svg";
@@ -21,36 +21,48 @@ const ContactInfo = () => {
               <p>Use your preferred contact method to reach out.</p>
             </dd>
           </div>
-          <div className="mt-3">
-            <dt className="sr-only">Email</dt>
-            <dd className="flex">
-              <EmailSvg
-                className="h-6 w-6 flex-shrink-0 fill-gray-400"
-                aria-hidden="true"
-              />
-              <span className="ml-3">ayman@dazaki.com</span>
-            </dd>
-          </div>
-          <div className="mt-3">
-            <dt className="sr-only">Discord</dt>
-            <dd className="flex">
-              <DiscordSvg
-                className="h-6 w-6 flex-shrink-0 fill-gray-400"
-                aria-hidden="true"
-              />
-              <span className="ml-3">aymanoid#0609</span>
-            </dd>
-          </div>
-          <div className="mt-3">
-            <dt className="sr-only">Telegram</dt>
-            <dd className="flex">
-              <TelegramSvg
-                className="h-6 w-6 flex-shrink-0 fill-gray-400"
-                aria-hidden="true"
-              />
-              <span className="ml-3">aymanoid</span>
-            </dd>
-          </div>
+          <Link href="mailto:ayman@dazaki.com">
+            <a target="_blank" rel="noopener noreferrer">
+              <div className="mt-3">
+                <dt className="sr-only">Email</dt>
+                <dd className="flex">
+                  <EmailSvg
+                    className="h-6 w-6 flex-shrink-0 fill-gray-400"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3">ayman@dazaki.com</span>
+                </dd>
+              </div>
+            </a>
+          </Link>
+          <Link href="https://discord.com/users/714385023112970303">
+            <a target="_blank" rel="noopener noreferrer">
+              <div className="mt-3">
+                <dt className="sr-only">Discord</dt>
+                <dd className="flex">
+                  <DiscordSvg
+                    className="h-6 w-6 flex-shrink-0 fill-gray-400"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3">aymanoid#0609</span>
+                </dd>
+              </div>
+            </a>
+          </Link>
+          <Link href="https://t.me/aymanoid">
+            <a target="_blank" rel="noopener noreferrer">
+              <div className="mt-3">
+                <dt className="sr-only">Telegram</dt>
+                <dd className="flex">
+                  <TelegramSvg
+                    className="h-6 w-6 flex-shrink-0 fill-gray-400"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3">aymanoid</span>
+                </dd>
+              </div>
+            </a>
+          </Link>
         </dl>
       </div>
     </div>
