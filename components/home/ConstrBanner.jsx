@@ -40,7 +40,7 @@ const ConstrBanner = () => {
               <button
                 onClick={() => setClosed(true)}
                 type="button"
-                className="-mr-1 flex rounded-md p-2 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white"
+                className="-mr-1 flex rounded-md p-2 hover:bg-rose-500 focus:outline-none focus:ring-2 focus:ring-white"
               >
                 <span className="sr-only">Dismiss</span>
                 <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
