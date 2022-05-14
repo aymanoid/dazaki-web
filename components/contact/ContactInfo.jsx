@@ -11,17 +11,17 @@ const ContactInfo = () => {
           Get in touch
         </h2>
         <p className="mt-3 text-lg leading-6 text-gray-500">
-          Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
-          massa dictumst amet. Sapien tortor lacus arcu.
+          If you'd like to discuss a project idea, general inquiries, or
+          anything else, feel free to get in touch.
         </p>
         <dl className="mt-8 text-base text-gray-500">
           <div>
             <dt className="sr-only">Contact Method</dt>
             <dd>
-              <p>Use your preferred contact method to reach out.</p>
+              <p>Use the form or your preferred contact method to reach out.</p>
             </dd>
           </div>
-          <Link href="mailto:ayman@dazaki.com">
+          <Link href="mailto:ayman@dazaki.com" passHref>
             <a target="_blank" rel="noopener noreferrer">
               <div className="mt-3 hover:text-rose-600">
                 <dt className="sr-only">Email</dt>
@@ -35,7 +35,7 @@ const ContactInfo = () => {
               </div>
             </a>
           </Link>
-          <Link href="https://discord.com/users/714385023112970303">
+          <Link href="https://discord.com/users/714385023112970303" passHref>
             <a target="_blank" rel="noopener noreferrer">
               <div className="mt-3 hover:text-rose-600">
                 <dt className="sr-only">Discord</dt>
@@ -49,7 +49,7 @@ const ContactInfo = () => {
               </div>
             </a>
           </Link>
-          <Link href="https://t.me/aymanoid">
+          <Link href="https://t.me/aymanoid" passHref>
             <a target="_blank" rel="noopener noreferrer">
               <div className="mt-3 hover:text-rose-600">
                 <dt className="sr-only">Telegram</dt>
