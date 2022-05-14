@@ -7,7 +7,7 @@ const servicesData = [
   {
     name: "eCommerce Solutions",
     description:
-      "Ecommerce store development and set up, including payment integration, and custom merch supplying.",
+      "Ecommerce store development and setup, including payment integration, and custom merch supplying.",
   },
   {
     name: "Social Media Marketing",
