@@ -68,10 +68,12 @@ const Header = () => {
           <>
             <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
               <div className="flex justify-start lg:w-0 lg:flex-1">
-                <a href="#">
-                  <span className="sr-only">Workflow</span>
-                  <WebsiteLogoSvg className="h-8 w-auto fill-white sm:h-10" />
-                </a>
+                <Link href="/">
+                  <a>
+                    <span className="sr-only">Workflow</span>
+                    <WebsiteLogoSvg className="h-8 w-auto fill-white sm:h-10" />
+                  </a>
+                </Link>
               </div>
               <div className="-my-2 -mr-2 md:hidden">
                 <Popover.Button
