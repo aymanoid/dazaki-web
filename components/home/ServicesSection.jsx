@@ -22,7 +22,7 @@ const servicesData = [
   {
     name: "Mobile App Development",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+      "Fully-featured native mobile application development and design, for both Android and iOS.",
   },
   {
     name: "Custom Software Development",
