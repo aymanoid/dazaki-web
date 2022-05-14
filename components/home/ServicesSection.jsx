@@ -12,7 +12,7 @@ const servicesData = [
   {
     name: "Social Media Marketing",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+      "Creating and managing social media ad campaigns, A/B testing and optimizing compaigns based on analytics, and more.",
   },
   {
     name: "Digital Branding",
