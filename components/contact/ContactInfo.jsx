@@ -23,7 +23,7 @@ const ContactInfo = () => {
           </div>
           <Link href="mailto:ayman@dazaki.com">
             <a target="_blank" rel="noopener noreferrer">
-              <div className="mt-3">
+              <div className="mt-3 hover:text-rose-600">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <EmailSvg
@@ -37,7 +37,7 @@ const ContactInfo = () => {
           </Link>
           <Link href="https://discord.com/users/714385023112970303">
             <a target="_blank" rel="noopener noreferrer">
-              <div className="mt-3">
+              <div className="mt-3 hover:text-rose-600">
                 <dt className="sr-only">Discord</dt>
                 <dd className="flex">
                   <DiscordSvg
@@ -51,7 +51,7 @@ const ContactInfo = () => {
           </Link>
           <Link href="https://t.me/aymanoid">
             <a target="_blank" rel="noopener noreferrer">
-              <div className="mt-3">
+              <div className="mt-3 hover:text-rose-600">
                 <dt className="sr-only">Telegram</dt>
                 <dd className="flex">
                   <TelegramSvg
