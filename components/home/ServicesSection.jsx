@@ -17,7 +17,7 @@ const servicesData = [
   {
     name: "Digital Branding",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+      "Brand indentity development, providing corporate or product name research, design elements, and brand guidelines.",
   },
   {
     name: "Mobile App Development",
