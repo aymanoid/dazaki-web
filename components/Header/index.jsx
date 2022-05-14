@@ -9,6 +9,7 @@ import { MenuIcon } from "@heroicons/react/outline";
 import WebsiteLogoSvg from "components/svgs/website_logo.svg";
 import MobileMenu from "components/Header/MobileMenu";
 import SubMenu from "components/Header/SubMenu";
+import Link from "next/link";
 
 const subMenuData = [
   {
@@ -99,12 +100,11 @@ const Header = () => {
                 ))}
               </Popover.Group>
               <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-                <a
-                  href="#"
-                  className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-rose-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-500 hover:to-rose-500"
-                >
-                  Contact
-                </a>
+                <Link href="/contact">
+                  <a className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-rose-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-500 hover:to-rose-500">
+                    Contact
+                  </a>
+                </Link>
               </div>
             </div>
 
