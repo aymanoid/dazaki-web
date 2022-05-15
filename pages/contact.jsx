@@ -1,8 +1,12 @@
+import { useRouter } from "next/router";
 import Layout from "components/Layout";
 import ContactInfo from "components/contact/ContactInfo";
 import ContactForm from "components/contact/ContactForm";
+import SubmissionBanner from "components/contact/SubmissionBanner";
 
 const Contact = () => {
+  const { query } = useRouter();
+
   return (
     <Layout>
       <div className="relative bg-zinc-900">
@@ -14,6 +18,7 @@ const Contact = () => {
           <ContactForm />
         </div>
       </div>
+      {query.s && <SubmissionBanner statusCode={query.s} />}
     </Layout>
   );
 };
