@@ -4,7 +4,7 @@ const ContactForm = () => {
       <div className="mx-auto max-w-lg lg:max-w-none">
         <form
           action="/api/contact"
-          method="POST"
+          method="GET"
           className="grid grid-cols-1 gap-y-6"
         >
           <div>

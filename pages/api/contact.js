@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const handler = async (req, res) => {
-  const { name, email, subject, message } = req.body;
+  const { name, email, subject, message } = req.query;
 
   const between = (x, min, max) => {
     return x >= min && x <= max;
@@ -46,7 +46,7 @@ const handler = async (req, res) => {
     return res.redirect("/contact?s=9");
   }
 
-  res.status(200).redirect("/contact?s=0");
+  return res.redirect("/contact?s=0");
 };
 
 export default handler;
