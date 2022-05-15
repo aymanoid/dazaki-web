@@ -35,6 +35,23 @@ const handler = async (req, res) => {
         },
       ],
     },
+    {
+      title: "User Info",
+      fields: [
+        {
+          name: "IP Address",
+          value: req.ip || "empty",
+        },
+        {
+          name: "User Agent",
+          value: req.ua || "empty",
+        },
+        {
+          name: "Geo Location",
+          value: req.geo || "empty",
+        },
+      ],
+    },
   ];
 
   const config = {
