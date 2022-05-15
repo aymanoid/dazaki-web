@@ -46,7 +46,7 @@ const handler = async (req, res) => {
     return res.redirect("/contact?s=9");
   }
 
-  return res.redirect("/contact?s=0");
+  return res.redirect("/contact");
 };
 
 export default handler;
