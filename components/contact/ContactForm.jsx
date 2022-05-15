@@ -3,7 +3,7 @@ const ContactForm = () => {
     <div className="border-t-4 border-rose-600 bg-zinc-900 py-16 px-4 sm:px-6 lg:col-span-3 lg:border-l-4 lg:border-t-0 lg:py-28 lg:px-8 xl:pl-12">
       <div className="mx-auto max-w-lg lg:max-w-none">
         <form
-          action="/api/form"
+          action="/api/contact"
           method="POST"
           className="grid grid-cols-1 gap-y-6"
         >
