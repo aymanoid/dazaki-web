@@ -11,7 +11,7 @@ const ContactInfo = () => {
           Get in touch
         </h2>
         <p className="mt-3 text-lg leading-6 text-gray-500">
-          If you'd like to discuss a project idea, general inquiries, or
+          If you&apos;d like to discuss a project idea, general inquiries, or
           anything else, feel free to get in touch.
         </p>
         <dl className="mt-8 text-base text-gray-500">
