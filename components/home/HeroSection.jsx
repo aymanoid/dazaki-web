@@ -36,7 +36,7 @@ const HeroSection = () => {
                 href="#"
                 className="flex w-full items-center justify-center rounded-md bg-white px-8 py-3 text-base font-medium text-rose-600 hover:bg-gray-200 md:py-4 md:px-10 md:text-lg"
               >
-                About
+                Work
               </a>
             </div>
           </div>

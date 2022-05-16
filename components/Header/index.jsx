@@ -50,7 +50,6 @@ const subMenuData = [
 ];
 
 const navLinksData = [
-  { name: "About", href: "#" },
   { name: "Work", href: "#" },
   { name: "Blog", href: "#" },
 ];

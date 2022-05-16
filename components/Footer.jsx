@@ -6,7 +6,6 @@ import FacebookSvg from "components/svgs/social/facebook.svg";
 const navigation = {
   main: [
     { name: "Home", href: "/" },
-    { name: "About", href: "#" },
     { name: "Work", href: "#" },
     { name: "Blog", href: "#" },
     { name: "Contact", href: "#" },
