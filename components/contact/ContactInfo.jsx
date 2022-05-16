@@ -1,7 +1,28 @@
 import Link from "next/link";
+import EmailSvg from "components/svgs/iconmonstr-email-1.svg";
 import DiscordSvg from "components/svgs/social/discord.svg";
 import TelegramSvg from "components/svgs/social/telegram.svg";
-import EmailSvg from "components/svgs/iconmonstr-email-1.svg";
+
+const contactMethods = [
+  {
+    name: "Email",
+    username: "ayman@dazaki.com",
+    href: "mailto:ayman@dazaki.com",
+    icon: EmailSvg,
+  },
+  {
+    name: "Discord",
+    username: "aymanoid#0609",
+    href: "https://discord.com/users/714385023112970303",
+    icon: DiscordSvg,
+  },
+  {
+    name: "Telegram",
+    username: "aymanoid",
+    href: "https://t.me/aymanoid",
+    icon: TelegramSvg,
+  },
+];
 
 const ContactInfo = () => {
   return (
@@ -21,48 +42,22 @@ const ContactInfo = () => {
               <p>Use the form or your preferred contact method to reach out.</p>
             </dd>
           </div>
-          <Link href="mailto:ayman@dazaki.com" passHref>
-            <a target="_blank" rel="noopener noreferrer">
-              <div className="mt-3 hover:text-rose-600">
-                <dt className="sr-only">Email</dt>
-                <dd className="flex">
-                  <EmailSvg
-                    className="h-6 w-6 flex-shrink-0 fill-gray-400"
-                    aria-hidden="true"
-                  />
-                  <span className="ml-3">ayman@dazaki.com</span>
-                </dd>
-              </div>
-            </a>
-          </Link>
-          <Link href="https://discord.com/users/714385023112970303" passHref>
-            <a target="_blank" rel="noopener noreferrer">
-              <div className="mt-3 hover:text-rose-600">
-                <dt className="sr-only">Discord</dt>
-                <dd className="flex">
-                  <DiscordSvg
-                    className="h-6 w-6 flex-shrink-0 fill-gray-400"
-                    aria-hidden="true"
-                  />
-                  <span className="ml-3">aymanoid#0609</span>
-                </dd>
-              </div>
-            </a>
-          </Link>
-          <Link href="https://t.me/aymanoid" passHref>
-            <a target="_blank" rel="noopener noreferrer">
-              <div className="mt-3 hover:text-rose-600">
-                <dt className="sr-only">Telegram</dt>
-                <dd className="flex">
-                  <TelegramSvg
-                    className="h-6 w-6 flex-shrink-0 fill-gray-400"
-                    aria-hidden="true"
-                  />
-                  <span className="ml-3">aymanoid</span>
-                </dd>
-              </div>
-            </a>
-          </Link>
+          {contactMethods.map((item) => (
+            <Link key={item.name} href={item.href} passHref>
+              <a target="_blank" rel="noopener noreferrer">
+                <div className="mt-3 hover:text-rose-600">
+                  <dt className="sr-only">{item.name}</dt>
+                  <dd className="flex">
+                    <item.icon
+                      className="h-6 w-6 flex-shrink-0 fill-gray-400"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3">{item.username}</span>
+                  </dd>
+                </div>
+              </a>
+            </Link>
+          ))}
         </dl>
       </div>
     </div>
