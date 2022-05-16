@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <NextSeo
-        title="Dazaki - Custom Technology Solutions"
+        title="Dazaki - Digital Solutions"
         description="Dazaki provides custom techonology solutions for businesses and individuals."
       />
       <Layout>
