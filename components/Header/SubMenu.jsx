@@ -1,6 +1,6 @@
-import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
+import { Fragment } from "react";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");

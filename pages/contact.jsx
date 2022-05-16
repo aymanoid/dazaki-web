@@ -1,9 +1,9 @@
-import { useRouter } from "next/router";
-import { NextSeo } from "next-seo";
 import Layout from "components/Layout";
-import ContactInfo from "components/contact/ContactInfo";
 import ContactForm from "components/contact/ContactForm";
+import ContactInfo from "components/contact/ContactInfo";
 import SubmissionBanner from "components/contact/SubmissionBanner";
+import { NextSeo } from "next-seo";
+import { useRouter } from "next/router";
 
 const Contact = () => {
   const { query } = useRouter();

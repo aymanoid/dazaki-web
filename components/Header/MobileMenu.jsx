@@ -1,7 +1,7 @@
-import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
+import { Fragment } from "react";
 
 const MobileMenu = ({ subMenuData, navLinksData }) => {
   return (

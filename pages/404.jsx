@@ -1,5 +1,5 @@
-import { NextSeo } from "next-seo";
 import Layout from "components/Layout";
+import { NextSeo } from "next-seo";
 import Link from "next/link";
 
 const FourZeroFour = () => {

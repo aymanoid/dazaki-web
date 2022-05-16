@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 const unsplashLoader = ({ src, width, quality }) => {
   return `https://images.unsplash.com/${src}?w=${width}&q=${

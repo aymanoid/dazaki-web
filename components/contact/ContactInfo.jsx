@@ -1,7 +1,7 @@
-import Link from "next/link";
 import EmailSvg from "components/svgs/iconmonstr-email-1.svg";
 import DiscordSvg from "components/svgs/social/discord.svg";
 import TelegramSvg from "components/svgs/social/telegram.svg";
+import Link from "next/link";
 
 const contactMethods = [
   {

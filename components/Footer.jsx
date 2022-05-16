@@ -1,6 +1,6 @@
-import TwitterSvg from "components/svgs/social/twitter.svg";
-import InstagramSvg from "components/svgs/social/instagram.svg";
 import GithubSvg from "components/svgs/social/github.svg";
+import InstagramSvg from "components/svgs/social/instagram.svg";
+import TwitterSvg from "components/svgs/social/twitter.svg";
 import Link from "next/link";
 
 const navigation = {
