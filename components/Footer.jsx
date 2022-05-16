@@ -2,13 +2,14 @@ import TwitterSvg from "components/svgs/social/twitter.svg";
 import InstagramSvg from "components/svgs/social/instagram.svg";
 import GithubSvg from "components/svgs/social/github.svg";
 import FacebookSvg from "components/svgs/social/facebook.svg";
+import Link from "next/link";
 
 const navigation = {
   main: [
     { name: "Home", href: "/" },
     { name: "Work", href: "#" },
     { name: "Blog", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Contact", href: "/contact" },
   ],
   social: [
     {
@@ -53,12 +54,11 @@ const Footer = () => {
         >
           {navigation.main.map((item) => (
             <div key={item.name} className="px-5 py-2">
-              <a
-                href={item.href}
-                className="text-base text-white hover:text-rose-500"
-              >
-                {item.name}
-              </a>
+              <Link href={item.href}>
+                <a className="text-base text-white hover:text-rose-500">
+                  {item.name}
+                </a>
+              </Link>
             </div>
           ))}
         </nav>
