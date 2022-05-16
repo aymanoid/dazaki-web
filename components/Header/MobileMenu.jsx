@@ -77,12 +77,11 @@ const MobileMenu = ({ subMenuData, navLinksData }) => {
               ))}
             </div>
             <div className="mt-6">
-              <a
-                href="#"
-                className="flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-rose-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-rose-700"
-              >
-                Contact
-              </a>
+              <Link href="/contact">
+                <a className="flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-rose-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-rose-700">
+                  Contact
+                </a>
+              </Link>
             </div>
           </div>
         </div>
