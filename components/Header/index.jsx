@@ -50,7 +50,7 @@ const subMenuData = [
 ];
 
 const navLinksData = [
-  { name: "Work", href: "#" },
+  { name: "Work", href: "/work" },
   { name: "Blog", href: "#" },
 ];
 
@@ -102,13 +102,11 @@ const Header = () => {
                 <SubMenu subMenuData={subMenuData} />
 
                 {navLinksData.map((e) => (
-                  <a
-                    key={e.name}
-                    href={e.href}
-                    className="text-base font-medium text-white hover:text-rose-500"
-                  >
-                    {e.name}
-                  </a>
+                  <Link key={e.name} href={e.href}>
+                    <a className="text-base font-medium text-white hover:text-rose-500">
+                      {e.name}
+                    </a>
+                  </Link>
                 ))}
               </Popover.Group>
               <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">

@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 
 const MobileMenu = ({ subMenuData, navLinksData }) => {
   return (
@@ -68,13 +69,11 @@ const MobileMenu = ({ subMenuData, navLinksData }) => {
           <div className="py-6 px-5">
             <div className="grid grid-cols-2 gap-4">
               {navLinksData.map((e) => (
-                <a
-                  key={e.name}
-                  href={e.href}
-                  className="text-base font-medium text-white hover:text-rose-500"
-                >
-                  {e.name}
-                </a>
+                <Link key={e.name} href={e.href}>
+                  <a className="text-base font-medium text-white hover:text-rose-500">
+                    {e.name}
+                  </a>
+                </Link>
               ))}
             </div>
             <div className="mt-6">

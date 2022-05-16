@@ -32,12 +32,11 @@ const HeroSection = () => {
               </Link>
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a
-                href="#"
-                className="flex w-full items-center justify-center rounded-md bg-white px-8 py-3 text-base font-medium text-rose-600 hover:bg-gray-200 md:py-4 md:px-10 md:text-lg"
-              >
-                Work
-              </a>
+              <Link href="/work">
+                <a className="flex w-full items-center justify-center rounded-md bg-white px-8 py-3 text-base font-medium text-rose-600 hover:bg-gray-200 md:py-4 md:px-10 md:text-lg">
+                  Work
+                </a>
+              </Link>
             </div>
           </div>
         </div>
