@@ -1,7 +1,6 @@
 import TwitterSvg from "components/svgs/social/twitter.svg";
 import InstagramSvg from "components/svgs/social/instagram.svg";
 import GithubSvg from "components/svgs/social/github.svg";
-import FacebookSvg from "components/svgs/social/facebook.svg";
 import Link from "next/link";
 
 const navigation = {
@@ -14,30 +13,23 @@ const navigation = {
   social: [
     {
       name: "Twitter",
-      href: "#",
+      href: "https://twitter.com/aymanoid",
       icon: (props) => (
         <TwitterSvg fill="currentColor" viewBox="0 0 24 24" {...props} />
       ),
     },
     {
       name: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/aymanoid/",
       icon: (props) => (
         <InstagramSvg fill="currentColor" viewBox="0 0 24 24" {...props} />
       ),
     },
     {
       name: "GitHub",
-      href: "#",
+      href: "https://github.com/aymanoid",
       icon: (props) => (
         <GithubSvg fill="currentColor" viewBox="0 0 24 24" {...props} />
-      ),
-    },
-    {
-      name: "Facebook",
-      href: "#",
-      icon: (props) => (
-        <FacebookSvg fill="currentColor" viewBox="0 0 24 24" {...props} />
       ),
     },
   ],
@@ -64,14 +56,16 @@ const Footer = () => {
         </nav>
         <div className="mt-8 flex justify-center space-x-6">
           {navigation.social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-gray-50 hover:text-rose-500"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
+            <Link key={item.name} href={item.href} passHref>
+              <a
+                className="text-gray-50 hover:text-rose-500"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            </Link>
           ))}
         </div>
         <p className="mt-8 text-center text-base text-gray-200">
