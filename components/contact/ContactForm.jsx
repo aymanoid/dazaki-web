@@ -72,7 +72,7 @@ const ContactForm = () => {
           <div>
             <button
               type="submit"
-              className="inline-flex justify-center rounded-md bg-gradient-to-r from-purple-500 to-rose-600 py-3 px-6 text-base font-medium text-white hover:from-purple-400 hover:to-rose-500"
+              className="inline-flex justify-center rounded-md bg-gradient-to-r from-purple-500 to-rose-600 py-3 px-6 text-base font-semibold text-white hover:from-purple-400 hover:to-rose-500"
             >
               Submit
             </button>

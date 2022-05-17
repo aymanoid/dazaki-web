@@ -26,7 +26,7 @@ const ConstrBanner = () => {
                   aria-hidden="true"
                 />
               </span>
-              <p className="ml-3 truncate font-medium text-white">
+              <p className="ml-3 truncate font-semibold text-white">
                 <span className="md:hidden">
                   Website is under construction.
                 </span>

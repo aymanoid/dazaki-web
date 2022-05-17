@@ -26,14 +26,14 @@ const HeroSection = () => {
           <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
               <Link href="/contact">
-                <a className="flex w-full items-center justify-center rounded-md bg-gradient-to-r from-purple-500 to-rose-600 px-8 py-3 text-base font-medium text-white hover:from-purple-400 hover:to-rose-500 md:py-4 md:px-10 md:text-lg">
+                <a className="flex w-full items-center justify-center rounded-md bg-gradient-to-r from-purple-500 to-rose-600 px-8 py-3 text-base font-semibold text-white hover:from-purple-400 hover:to-rose-500 md:py-4 md:px-10 md:text-lg">
                   Get in Touch
                 </a>
               </Link>
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <Link href="/work">
-                <a className="flex w-full items-center justify-center rounded-md bg-white px-8 py-3 text-base font-medium text-rose-600 hover:bg-gray-200 md:py-4 md:px-10 md:text-lg">
+                <a className="flex w-full items-center justify-center rounded-md bg-white px-8 py-3 text-base font-semibold text-rose-600 hover:bg-gray-200 md:py-4 md:px-10 md:text-lg">
                   Work
                 </a>
               </Link>

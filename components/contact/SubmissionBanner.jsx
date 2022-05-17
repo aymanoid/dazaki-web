@@ -70,7 +70,7 @@ const SubmissionBanner = ({ statusCode }) => {
                   aria-hidden="true"
                 />
               </span>
-              <p className="ml-3 truncate font-medium text-white">
+              <p className="ml-3 truncate font-semibold text-white">
                 <span className="md:hidden">
                   {statusMessages[statusCode].short}
                 </span>

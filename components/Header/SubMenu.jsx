@@ -16,7 +16,7 @@ const SubMenu = ({ subMenuData }) => {
               open
                 ? "focus:ring-offset-none text-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 focus:ring-offset-black"
                 : "text-white",
-              "group inline-flex items-center rounded-md bg-black text-base font-medium hover:text-rose-500"
+              "group inline-flex items-center rounded-md bg-black text-base font-semibold hover:text-rose-500"
             )}
           >
             <span>Industries</span>
@@ -55,7 +55,7 @@ const SubMenu = ({ subMenuData }) => {
                         />
                       </div>
                       <div className="ml-4">
-                        <p className="text-base font-medium text-gray-900">
+                        <p className="text-base font-semibold text-gray-900">
                           {item.name}
                         </p>
                         <p className="mt-1 text-sm text-gray-500">

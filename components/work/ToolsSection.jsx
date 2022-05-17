@@ -169,7 +169,7 @@ const ToolsSection = () => {
                       className="inline-flex h-16 w-16 items-center justify-center fill-white"
                       aria-hidden="true"
                     />
-                    <h3 className="mt-5 text-center text-lg font-medium tracking-tight text-gray-300">
+                    <h3 className="mt-5 text-center text-lg font-semibold tracking-tight text-gray-300">
                       {e.name}
                     </h3>
                   </div>

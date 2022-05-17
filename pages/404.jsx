@@ -18,12 +18,12 @@ const FourZeroFour = () => {
             <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
               Page not found
             </h1>
-            <p className="mt-2 text-lg font-medium text-gray-300">
+            <p className="mt-2 text-lg font-semibold text-gray-300">
               Sorry, we couldn&apos;t find the page you&apos;re looking for.
             </p>
             <div className="mt-6">
               <Link href="/">
-                <a className="inline-flex items-center rounded-lg bg-white px-4 py-2 text-sm font-medium text-black hover:outline hover:outline-rose-400">
+                <a className="inline-flex items-center rounded-lg bg-white px-4 py-2 text-sm font-semibold text-black hover:outline hover:outline-rose-400">
                   Go back home
                 </a>
               </Link>
