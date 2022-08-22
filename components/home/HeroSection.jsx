@@ -24,9 +24,9 @@ const HeroSection = () => {
             awesome experiences.
           </p>
           <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
-            <div className="rounded-md shadow">
+            <div className="rounded-xl shadow">
               <Link href="/contact">
-                <a className="flex w-full items-center justify-center rounded-md bg-gradient-to-r from-purple-500 to-rose-600 px-8 py-3 text-base font-semibold text-white hover:from-purple-400 hover:to-rose-500 md:py-4 md:px-10 md:text-lg">
+                <a className="flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 to-rose-600 px-8 py-3 text-base font-semibold text-white hover:from-purple-400 hover:to-rose-500 md:py-4 md:px-10 md:text-lg">
                   Get in Touch
                 </a>
               </Link>
