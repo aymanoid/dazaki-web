@@ -45,7 +45,7 @@ const SubMenu = ({ subMenuData }) => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-m-3 flex items-start rounded-lg p-3 hover:outline hover:outline-rose-500"
+                      className="pointer-events-none -m-3 flex items-start rounded-lg p-3 hover:outline hover:outline-rose-500"
                     >
                       <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-rose-600 text-white sm:h-12 sm:w-12">
                         <item.icon
