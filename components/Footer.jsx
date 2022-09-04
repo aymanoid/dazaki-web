@@ -1,5 +1,7 @@
+import FacebookSvg from "components/svgs/social/facebook.svg";
 import GithubSvg from "components/svgs/social/github.svg";
 import InstagramSvg from "components/svgs/social/instagram.svg";
+import TiktokSvg from "components/svgs/social/tiktok.svg";
 import TwitterSvg from "components/svgs/social/twitter.svg";
 import Link from "next/link";
 
@@ -13,21 +15,35 @@ const navigation = {
   social: [
     {
       name: "Twitter",
-      href: "https://twitter.com/aymanoid",
+      href: "https://twitter.com/dazakiofficial",
       icon: (props) => (
         <TwitterSvg fill="currentColor" viewBox="0 0 24 24" {...props} />
       ),
     },
     {
+      name: "Facebook",
+      href: "https://www.facebook.com/dazakiofficial",
+      icon: (props) => (
+        <FacebookSvg fill="currentColor" viewBox="0 0 24 24" {...props} />
+      ),
+    },
+    {
       name: "Instagram",
-      href: "https://www.instagram.com/aymanoid/",
+      href: "https://www.instagram.com/dazakiofficial/",
       icon: (props) => (
         <InstagramSvg fill="currentColor" viewBox="0 0 24 24" {...props} />
       ),
     },
     {
+      name: "TikTok",
+      href: "https://www.tiktok.com/aymanoid/",
+      icon: (props) => (
+        <TiktokSvg fill="currentColor" viewBox="0 0 24 24" {...props} />
+      ),
+    },
+    {
       name: "GitHub",
-      href: "https://github.com/aymanoid",
+      href: "https://github.com/dazakiofficial",
       icon: (props) => (
         <GithubSvg fill="currentColor" viewBox="0 0 24 24" {...props} />
       ),
