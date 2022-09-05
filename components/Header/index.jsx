@@ -1,5 +1,5 @@
 import { Popover } from "@headlessui/react";
-import { MenuIcon } from "@heroicons/react/outline";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 import MobileMenu from "components/Header/MobileMenu";
 import SubMenu from "components/Header/SubMenu";
 import BriefcaseSvg from "components/svgs/sub-menu/iconmonstr-briefcase-5.svg";
@@ -95,7 +95,7 @@ const Header = () => {
                   )}
                 >
                   <span className="sr-only">Open menu</span>
-                  <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                  <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
               <Popover.Group as="nav" className="hidden space-x-10 md:flex">

@@ -1,4 +1,7 @@
-import { ExclamationIcon, XIcon } from "@heroicons/react/outline";
+import {
+  ExclamationTriangleIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
@@ -65,7 +68,7 @@ const SubmissionBanner = ({ statusCode }) => {
           <div className="flex flex-wrap items-center justify-between">
             <div className="flex w-0 flex-1 items-center">
               <span className="flex rounded-lg bg-purple-800 p-2">
-                <ExclamationIcon
+                <ExclamationTriangleIcon
                   className="h-6 w-6 text-white"
                   aria-hidden="true"
                 />
@@ -89,7 +92,7 @@ const SubmissionBanner = ({ statusCode }) => {
                 className="-mr-1 flex rounded-md p-2 hover:bg-rose-500 focus:outline-none focus:ring-2 focus:ring-white"
               >
                 <span className="sr-only">Dismiss</span>
-                <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
               </button>
             </div>
           </div>

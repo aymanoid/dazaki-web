@@ -5,7 +5,7 @@ const servicesData = [
     title: "Web App Development",
     description:
       "Complete website development and design, from UX design to front-end coding to custom databases.",
-    imageUrl: "/assets/services-01.png",
+    imageUrl: "/assets/tmp.png",
   },
   {
     title: "Custom Sotfware Development",
