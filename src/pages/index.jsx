@@ -1,8 +1,8 @@
-import Layout from "components/Layout";
-import ConstrBanner from "components/home/ConstrBanner";
-import FirstSection from "components/home/FirstSection";
-import HeroSection from "components/home/HeroSection";
-import ServicesSection from "components/home/ServicesSection";
+import Layout from "@/components/Layout";
+import ConstrBanner from "@/components/home/ConstrBanner";
+import FirstSection from "@/components/home/FirstSection";
+import HeroSection from "@/components/home/HeroSection";
+import ServicesSection from "@/components/home/ServicesSection";
 import { NextSeo } from "next-seo";
 
 const Home = () => {

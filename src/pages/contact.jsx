@@ -1,7 +1,7 @@
-import Layout from "components/Layout";
-import ContactForm from "components/contact/ContactForm";
-import ContactInfo from "components/contact/ContactInfo";
-import SubmissionBanner from "components/contact/SubmissionBanner";
+import Layout from "@/components/Layout";
+import ContactForm from "@/components/contact/ContactForm";
+import ContactInfo from "@/components/contact/ContactInfo";
+import SubmissionBanner from "@/components/contact/SubmissionBanner";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 

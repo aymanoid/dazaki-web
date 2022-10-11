@@ -1,4 +1,4 @@
-import "styles/globals.css";
+import "@/styles/globals.css";
 
 const DazakiApp = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import servicesData from "data/home/services-data";
+import servicesData from "@/data/home/services-data";
 
 const ServicesSection = () => {
   return (
