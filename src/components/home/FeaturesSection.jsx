@@ -25,7 +25,7 @@ const FeaturesSection = () => {
                   <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-rose-500 to-purple-600 text-white">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
+                  <p className="ml-16 text-lg font-semibold leading-6 text-gray-900">
                     {feature.name}
                   </p>
                 </dt>
