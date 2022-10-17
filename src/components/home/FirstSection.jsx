@@ -1,7 +1,7 @@
 const FirstSection = () => {
   return (
-    <section className="bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+    <section className="bg-white py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base font-semibold uppercase tracking-wide text-purple-600">
             Unlimited Possiblities
