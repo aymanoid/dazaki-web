@@ -49,10 +49,7 @@ const subMenuData = [
   },
 ];
 
-const navLinksData = [
-  { name: "Work", href: "/work" },
-  { name: "Blog", href: "#" },
-];
+const navLinksData = [{ name: "Work", href: "/work" }];
 
 const classNames = (...classes) => {
   return classes.filter(Boolean).join(" ");

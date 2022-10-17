@@ -9,7 +9,6 @@ const navigation = {
   main: [
     { name: "Home", href: "/" },
     { name: "Work", href: "/work" },
-    { name: "Blog", href: "#" },
     { name: "Contact", href: "/contact" },
   ],
   social: [
