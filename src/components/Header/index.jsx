@@ -49,7 +49,7 @@ const subMenuData = [
   },
 ];
 
-const navLinksData = [{ name: "Work", href: "/work" }];
+const navLinksData = [{ name: "Technologies", href: "/technologies" }];
 
 const classNames = (...classes) => {
   return classes.filter(Boolean).join(" ");
@@ -65,7 +65,7 @@ const Header = () => {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/">
                   <a>
-                    <span className="sr-only">Workflow</span>
+                    <span className="sr-only">Dazaki</span>
                     <svg
                       className="h-8 w-auto sm:h-10"
                       width="554"

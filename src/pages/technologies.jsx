@@ -2,11 +2,11 @@ import Layout from "@/components/Layout";
 import ToolsSection from "@/components/work/ToolsSection";
 import { NextSeo } from "next-seo";
 
-const Work = () => {
+const Technologies = () => {
   return (
     <>
       <NextSeo
-        title="Dazaki - Work"
+        title="Dazaki - Technologies"
         description="Dazaki provides custom techonology solutions for businesses and individuals."
       />
       <Layout>
@@ -16,4 +16,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Technologies;

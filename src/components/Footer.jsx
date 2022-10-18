@@ -8,7 +8,7 @@ import Link from "next/link";
 const navigation = {
   main: [
     { name: "Home", href: "/" },
-    { name: "Work", href: "/work" },
+    { name: "Technologies", href: "/technologies" },
     { name: "Contact", href: "/contact" },
   ],
   social: [
