@@ -1,5 +1,4 @@
 import Layout from "@/components/Layout";
-import ConstrBanner from "@/components/home/ConstrBanner";
 import FirstSection from "@/components/home/FirstSection";
 import HeroSection from "@/components/home/HeroSection";
 import ServicesSection from "@/components/home/ServicesSection";
@@ -24,7 +23,6 @@ const Home = () => {
         <FeaturesSection />
         <div className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1" />
         <LastSection />
-        <ConstrBanner />
       </Layout>
     </>
   );
