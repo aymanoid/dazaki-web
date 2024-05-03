@@ -8,8 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro build && wrangler pages dev",
     "astro": "astro",
-    "deploy": "astro build && wrangler pages deploy",
-    "cf-typegen": "wrangler types"
+    "deploy": "astro build && wrangler pages deploy"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
@@ -18,7 +17,6 @@
     "typescript": "^5.4.5"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240502.0",
     "wrangler": "^3.53.1"
   }
 }

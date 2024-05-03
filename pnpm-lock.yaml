@@ -19,9 +19,6 @@ dependencies:
     version: 5.4.5
 
 devDependencies:
-  '@cloudflare/workers-types':
-    specifier: ^4.20240502.0
-    version: 4.20240502.0
   wrangler:
     specifier: ^3.53.1
     version: 3.53.1(@cloudflare/workers-types@4.20240502.0)
