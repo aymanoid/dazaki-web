@@ -1,6 +1,6 @@
 import { Popover, Transition } from "@headlessui/react";
 import ChevronDownIcon from "~icons/heroicons/chevron-down-solid";
-import { Fragment, type JSX } from "react";
+import { Fragment, type SVGProps } from "react";
 import { cn } from "@/lib/utils";
 
 interface SubMenuProps {
@@ -8,7 +8,7 @@ interface SubMenuProps {
     name: string;
     description: string;
     href: string;
-    icon: (props: JSX.SVGAttributes<SVGSVGElement>) => JSX.Element;
+    icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   }[];
 }
 

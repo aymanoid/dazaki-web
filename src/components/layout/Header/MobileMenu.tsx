@@ -1,13 +1,13 @@
 import { Popover, Transition } from "@headlessui/react";
 import XMarkIcon from "~icons/heroicons/x-mark";
-import { Fragment, type JSX } from "react";
+import { Fragment, type SVGProps } from "react";
 
 interface MobileMenuProps {
   subMenuData: {
     name: string;
     description: string;
     href: string;
-    icon: (props: JSX.SVGAttributes<SVGSVGElement>) => JSX.Element;
+    icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   }[];
   navLinksData: {
     name: string;
@@ -34,7 +34,7 @@ export default function MobileMenu({
         className="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden"
       >
         <div className="divide-y-2 divide-rose-500 rounded-lg bg-black shadow-lg ring-1 ring-black ring-opacity-5">
-          <div className="px-5 pt-5 pb-6">
+          <div className="px-5 pb-6 pt-5">
             <div className="flex items-center justify-between">
               <a href="/">
                 <svg
@@ -81,7 +81,7 @@ export default function MobileMenu({
               </nav>
             </div>
           </div>
-          <div className="py-6 px-5">
+          <div className="px-5 py-6">
             <div className="grid grid-cols-2 gap-4">
               {navLinksData.map((e) => (
                 <a
