@@ -1,0 +1,50 @@
+---
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+
+interface Props {
+  metadata: {
+    title: string;
+    description?: string;
+  };
+}
+
+const { metadata } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    {/* icons stuff */}
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#E11D48" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>{metadata.title}</title>
+    <meta
+      name="description"
+      content={metadata.description ||
+        "Dazaki provides custom techonology solutions for businesses and individuals."}
+    />
+  </head>
+  <body class="antialiased">
+    {/* TODO: removing this wrapper div breaks popover, look into fix */}
+    <div class="flex min-h-screen flex-col bg-zinc-900">
+      <Header client:idle />
+      <main class="flex-grow"><slot /></main>
+      <Footer />
+    </div>
+  </body>
+</html>
+
+<style>
+  html {
+    /* scrollbar-gutter: stable both-edges; */
+  }
+</style>
