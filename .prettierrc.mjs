@@ -9,4 +9,5 @@ export default {
       },
     },
   ],
+  tailwindFunctions: ["cn"],
 };
