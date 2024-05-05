@@ -1,16 +1,24 @@
 ---
-
+import Layout from "@/components/layout/MainLayout.astro";
+import FirstSection from "@/components/home/FirstSection";
+import HeroSection from "@/components/home/HeroSection.astro";
+import ServicesSection from "@/components/home/ServicesSection.astro";
+import FeaturesSection from "@/components/home/FeaturesSection";
+import LastSection from "@/components/home/LastSection";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
-  </body>
-</html>
+<Layout metadata={{ title: "Dazaki - Digital Solutions" }}>
+  <HeroSection />
+  <div class="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1">
+  </div>
+  <FirstSection />
+  <div class="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1">
+  </div>
+  <ServicesSection />
+  <div class="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1">
+  </div>
+  <FeaturesSection />
+  <div class="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1">
+  </div>
+  <LastSection />
+</Layout>
