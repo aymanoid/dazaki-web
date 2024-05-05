@@ -43,7 +43,7 @@ export default function Footer() {
   return (
     <footer className="bg-black">
       <div className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600 p-1" />
-      <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl overflow-hidden px-4 py-12 sm:px-6 lg:px-8">
         <nav
           className="-mx-5 -my-2 flex flex-wrap justify-center"
           aria-label="Footer"
@@ -74,7 +74,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-center text-base text-gray-200">
-          © 2022 Dazaki. All rights reserved.
+          © 2024 Dazaki. All rights reserved.
         </p>
       </div>
     </footer>
