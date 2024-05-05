@@ -1,7 +1,6 @@
 import ExclamationTriangleIcon from "~icons/heroicons/exclamation-triangle";
 import XMarkIcon from "~icons/heroicons/x-mark";
-import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 const statusMessages = {
   "0": {
@@ -44,22 +43,28 @@ const statusMessages = {
     short: "An error occurred while sending.",
     long: "An error occurred while sending your message, please try again.",
   },
-};
+} as const;
 
-interface SubmissionBannerProps {
-  statusCode: "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";
-}
+const SubmissionBanner = () => {
+  const [isBannerOpen, setIsBannerOpen] = useState(false);
+  const [statusMessage, setStatusMessage] = useState<{
+    short: string;
+    long: string;
+  } | null>(null);
 
-const SubmissionBanner = ({ statusCode }: SubmissionBannerProps) => {
-  const [isBannerOpen, setIsBannerOpen] = useState(true);
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const statusCode = searchParams.get("s");
+    if (statusCode && Object.keys(statusMessages).includes(statusCode)) {
+      setStatusMessage(
+        statusMessages[statusCode as keyof typeof statusMessages],
+      );
+      setIsBannerOpen(true);
+    }
+  }, []);
 
-  return (
-    <div
-      className={cn(
-        isBannerOpen ? "" : "hidden",
-        "fixed inset-x-0 bottom-0 pb-2 sm:pb-5",
-      )}
-    >
+  return isBannerOpen && statusMessage ? (
+    <div className="fixed inset-x-0 bottom-0 pb-2 sm:pb-5">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="rounded-lg bg-purple-600 p-2 shadow-lg sm:p-3">
           <div className="flex flex-wrap items-center justify-between">
@@ -71,18 +76,14 @@ const SubmissionBanner = ({ statusCode }: SubmissionBannerProps) => {
                 />
               </span>
               <p className="ml-3 truncate font-semibold text-white">
-                <span className="md:hidden">
-                  {statusMessages[statusCode].short}
-                </span>
-                <span className="hidden md:inline">
-                  {statusMessages[statusCode].long}
-                </span>
+                <span className="md:hidden">{statusMessage!.short}</span>
+                <span className="hidden md:inline">{statusMessage!.long}</span>
               </p>
             </div>
             <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
               <button
                 onClick={() => {
-                  // router.replace("/contact");
+                  window.location.href = "/contact";
                   setIsBannerOpen(false);
                 }}
                 type="button"
@@ -96,7 +97,7 @@ const SubmissionBanner = ({ statusCode }: SubmissionBannerProps) => {
         </div>
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default SubmissionBanner;

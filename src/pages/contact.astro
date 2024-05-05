@@ -3,20 +3,6 @@ import Layout from "@/components/layout/MainLayout.astro";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 import SubmissionBanner from "@/components/contact/SubmissionBanner";
-
-const statusCode = Astro.url.searchParams.get("s");
-const allowedStatusCodes = [
-  "0",
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-] as const;
 ---
 
 <Layout metadata={{ title: "Dazaki - Contact" }}>
@@ -29,11 +15,5 @@ const allowedStatusCodes = [
       <ContactForm />
     </div>
   </div>
-  {
-    statusCode && allowedStatusCodes.includes(statusCode as any) && (
-      <SubmissionBanner
-        statusCode={statusCode as (typeof allowedStatusCodes)[number]}
-      />
-    )
-  }
+  <SubmissionBanner client:load />
 </Layout>
