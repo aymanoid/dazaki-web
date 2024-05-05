@@ -1,0 +1,39 @@
+---
+import Layout from "@/components/layout/MainLayout.astro";
+import ContactForm from "@/components/contact/ContactForm";
+import ContactInfo from "@/components/contact/ContactInfo";
+import SubmissionBanner from "@/components/contact/SubmissionBanner";
+
+const statusCode = Astro.url.searchParams.get("s");
+const allowedStatusCodes = [
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+] as const;
+---
+
+<Layout metadata={{ title: "Dazaki - Contact" }}>
+  <div class="relative bg-zinc-900">
+    <div class="absolute inset-0">
+      <div class="absolute inset-y-0 left-0 w-1/2 bg-white"></div>
+    </div>
+    <div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
+      <ContactInfo />
+      <ContactForm />
+    </div>
+  </div>
+  {
+    statusCode && allowedStatusCodes.includes(statusCode as any) && (
+      <SubmissionBanner
+        statusCode={statusCode as (typeof allowedStatusCodes)[number]}
+      />
+    )
+  }
+</Layout>
