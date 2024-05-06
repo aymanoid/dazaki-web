@@ -1,3 +1,5 @@
+import { LinkButton } from "@/components/ui/Button";
+
 const LastSection = () => {
   return (
     <section className="bg-gradient-to-r from-purple-600 via-violet-600 to-rose-600">
@@ -9,14 +11,9 @@ const LastSection = () => {
           </span>
         </h2>
         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-          <div className="inline-flex rounded-md shadow">
-            <a
-              className="inline-flex items-center justify-center rounded-xl border border-transparent bg-black px-5 py-3 text-base font-semibold text-white hover:bg-white hover:text-black"
-              href="/contact"
-            >
-              Contact Us
-            </a>
-          </div>
+          <LinkButton size="lg" variant="secondary" href="/contact">
+            Contact Us
+          </LinkButton>
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import Button from "@/components/ui/Button";
+
 const ContactForm = () => {
   const apiUrl = import.meta.env.PROD
     ? "https://api.dazaki.com"
@@ -19,7 +21,7 @@ const ContactForm = () => {
               name="name"
               id="name"
               autoComplete="name"
-              className="block w-full rounded-md border-zinc-300 px-4 py-3 placeholder-zinc-500 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+              className="block w-full rounded-xl border-zinc-300 px-4 py-3 placeholder-zinc-500 shadow-sm focus:border-rose-500 focus:ring-rose-500"
               placeholder="Name"
               required
               pattern=".{1,256}"
@@ -35,7 +37,7 @@ const ContactForm = () => {
               name="email"
               type="email"
               autoComplete="email"
-              className="block w-full rounded-md border-zinc-300 px-4 py-3 placeholder-zinc-500 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+              className="block w-full rounded-xl border-zinc-300 px-4 py-3 placeholder-zinc-500 shadow-sm focus:border-rose-500 focus:ring-rose-500"
               placeholder="Email"
               required
               pattern=".{1,256}"
@@ -50,7 +52,7 @@ const ContactForm = () => {
               type="text"
               name="subject"
               id="subject"
-              className="block w-full rounded-md border-zinc-300 px-4 py-3 placeholder-zinc-500 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+              className="block w-full rounded-xl border-zinc-300 px-4 py-3 placeholder-zinc-500 shadow-sm focus:border-rose-500 focus:ring-rose-500"
               placeholder="Subject"
               required
               pattern=".{1,256}"
@@ -65,7 +67,7 @@ const ContactForm = () => {
               id="message"
               name="message"
               rows={4}
-              className="block w-full rounded-md border border-zinc-300 px-4 py-3 placeholder-zinc-500 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+              className="block w-full rounded-xl border border-zinc-300 px-4 py-3 placeholder-zinc-500 shadow-sm focus:border-rose-500 focus:ring-rose-500"
               placeholder="Message"
               required
               // pattern=".{1,4096}"
@@ -73,12 +75,9 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            <button
-              type="submit"
-              className="inline-flex justify-center rounded-md bg-gradient-to-r from-purple-500 to-rose-600 px-6 py-3 text-base font-semibold text-white hover:from-purple-400 hover:to-rose-500"
-            >
+            <Button size="lg" variant="primary" type="submit">
               Submit
-            </button>
+            </Button>
           </div>
         </form>
       </div>

@@ -9,6 +9,7 @@ import PhotoCameraIcon from "~icons/my-icons/iconmonstr-photo-camera-5.svg";
 import InfluencerIcon from "~icons/my-icons/iconmonstr-user-29.svg";
 import CreatorIcon from "~icons/my-icons/iconmonstr-webcam-3.svg";
 import { cn } from "@/lib/utils";
+import { LinkButton } from "@/components/ui/Button";
 
 const subMenuData = [
   {
@@ -103,12 +104,9 @@ export default function Header() {
                 ))}
               </Popover.Group>
               <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-                <a
-                  className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-xl border border-transparent bg-gradient-to-r from-purple-600 to-rose-600 bg-origin-border px-4 py-2 text-base font-semibold text-white shadow-sm hover:from-purple-500 hover:to-rose-500"
-                  href="/contact"
-                >
+                <LinkButton size="md" variant="primary" href="/contact">
                   Contact
-                </a>
+                </LinkButton>
               </div>
             </div>
 
