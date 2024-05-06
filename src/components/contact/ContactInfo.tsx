@@ -5,22 +5,22 @@ import TelegramIcon from "~icons/my-icons/telegram.svg";
 const contactMethods = [
   {
     name: "Email",
-    username: "ayman@dazaki.com",
-    href: "mailto:ayman@dazaki.com",
+    username: "contact@dazaki.com",
+    href: "mailto:contact@dazaki.com",
     icon: EmailIcon,
   },
-  {
-    name: "Discord",
-    username: "aymanoid#0609",
-    href: "https://discord.com/users/714385023112970303",
-    icon: DiscordIcon,
-  },
-  {
-    name: "Telegram",
-    username: "aymanoid",
-    href: "https://t.me/aymanoid",
-    icon: TelegramIcon,
-  },
+  // {
+  //   name: "Discord",
+  //   username: "aymanoid#0609",
+  //   href: "https://discord.com/users/714385023112970303",
+  //   icon: DiscordIcon,
+  // },
+  // {
+  //   name: "Telegram",
+  //   username: "aymanoid",
+  //   href: "https://t.me/aymanoid",
+  //   icon: TelegramIcon,
+  // },
 ];
 
 const ContactInfo = () => {
@@ -38,7 +38,7 @@ const ContactInfo = () => {
           <div>
             <dt className="sr-only">Contact Method</dt>
             <dd>
-              <p>Use the form or your preferred contact method to reach out.</p>
+              <p>Use the form or our email address to reach out.</p>
             </dd>
           </div>
           {contactMethods.map((item) => (
