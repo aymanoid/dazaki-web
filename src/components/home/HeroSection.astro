@@ -1,56 +1,50 @@
 ---
 import { Image } from "astro:assets";
 import heroImage from "@/assets/images/hero.jpg";
+import { LinkButton } from "@/components/ui/Button";
+
+const heroImageConfig = {
+  quality: 80,
+  widths: [360, 640, 768, 1024, 960, 2000] as number[],
+  sizes:
+    "(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 640px, (max-width: 1920px) 960px, 2000px",
+  loading: "eager",
+} as const;
 ---
 
-<section class="bg-zinc-900 lg:relative">
-  <div
-    class="mx-auto w-full max-w-7xl pb-20 pt-16 text-center lg:py-48 lg:text-left"
-  >
-    <div class="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
-      <h1
-        class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
-      >
-        <span class="block">Your Problem.</span>{" "}
-        <span
-          class="block bg-gradient-to-r from-red-200 to-rose-400 bg-clip-text text-transparent"
-        >
-          Our Solution.
-        </span>
-      </h1>
-      <p
-        class="mx-auto mt-3 max-w-md text-lg text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl"
-      >
-        Dazaki is building custom technology solutions for content creators,
-        businesses, influencers, and anyone else in need of services to make
-        awesome experiences.
-      </p>
-      <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
-        <div class="rounded-xl shadow">
-          <a
-            class="flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 to-rose-600 px-8 py-3 text-base font-semibold text-white hover:from-purple-400 hover:to-rose-500 md:px-10 md:py-4 md:text-lg"
-            href="/contact"
-          >
-            Get in Touch
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2"
-  >
+<section class="relative bg-zinc-900 lg:relative">
+  <div class="flex h-[30rem] w-full items-center md:h-[40rem]">
     {/* https://unsplash.com/photos/p0j-mE6mGo4 */}
-    <div class="relative h-full w-full">
-      <Image
-        class="h-full w-full object-cover"
-        src={heroImage}
-        alt="Main hero picture"
-        quality={80}
-        widths={[360, 640, 768, 1024, 960, 2000]}
-        sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 640px, (max-width: 1920px) 960px, 2000px"
-        loading="eager"
-      />
+    <Image
+      class="h-full w-full object-cover"
+      src={heroImage}
+      alt="Main hero picture"
+      {...heroImageConfig}
+    />
+  </div>
+  <div class="absolute inset-0 rounded-md bg-black opacity-50"></div>
+  <div class="absolute inset-0 flex flex-col items-center justify-center px-4">
+    <h1
+      class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
+    >
+      <span class="block">Your Problem.</span>{" "}
+      <span
+        class="block bg-gradient-to-r from-red-200 to-rose-400 bg-clip-text text-transparent"
+      >
+        Our Solution.
+      </span>
+    </h1>
+    <p
+      class="mt-3 max-w-md text-center text-lg text-gray-100 sm:text-xl md:mt-5 md:max-w-3xl"
+    >
+      Dazaki is building custom technology solutions for content creators,
+      businesses, influencers, and anyone else in need of services to make
+      awesome experiences.
+    </p>
+    <div class="mt-6 md:mt-10">
+      <LinkButton variant="branded" size="lg" href="/contact">
+        Get in Touch
+      </LinkButton>
     </div>
   </div>
 </section>
