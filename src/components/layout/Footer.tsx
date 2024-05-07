@@ -59,7 +59,7 @@ export default function Footer() {
             </div>
           ))}
         </nav>
-        <div className="mt-8 flex justify-center space-x-6">
+        {/* <div className="mt-8 flex justify-center space-x-6">
           {navigation.social.map((item) => (
             <a
               className="text-gray-50 hover:text-rose-500"
@@ -72,7 +72,7 @@ export default function Footer() {
               {item.icon}
             </a>
           ))}
-        </div>
+        </div> */}
         <p className="mt-8 text-center text-base text-gray-200">
           © 2024 Dazaki. All rights reserved.
         </p>

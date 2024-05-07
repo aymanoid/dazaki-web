@@ -5,7 +5,7 @@ const ContactForm = () => {
     ? "https://api.dazaki.com"
     : "http://localhost:3220";
   return (
-    <div className="border-t-4 border-rose-600 bg-zinc-900 px-4 py-16 sm:px-6 lg:col-span-3 lg:border-l-4 lg:border-t-0 lg:px-8 lg:py-28 xl:pl-12">
+    <div className="border-t-4 border-rose-600 bg-zinc-900 px-4 py-16 sm:px-6 lg:col-span-3 lg:border-l-4 lg:border-t-0 lg:px-8 lg:py-36 xl:pl-12">
       <div className="mx-auto max-w-lg lg:max-w-none">
         <form
           action={`${apiUrl}/contact`}

@@ -25,7 +25,7 @@ const contactMethods = [
 
 const ContactInfo = () => {
   return (
-    <div className="bg-white px-4 py-16 sm:px-6 lg:col-span-2 lg:px-8 lg:py-28 xl:pr-12">
+    <div className="bg-white px-4 py-16 sm:px-6 lg:col-span-2 lg:px-8 lg:py-36 xl:pr-12">
       <div className="mx-auto max-w-lg">
         <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
           Get in touch
