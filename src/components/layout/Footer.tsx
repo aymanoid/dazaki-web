@@ -74,7 +74,7 @@ export default function Footer() {
           ))}
         </div> */}
         <p className="mt-8 text-center text-base text-gray-200">
-          © 2024 Dazaki. All rights reserved.
+          © 2025 Dazaki. All rights reserved.
         </p>
       </div>
     </footer>
